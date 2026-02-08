@@ -10,10 +10,7 @@ public class CommentController {
 
     private final MySQLCommentDao mySQLCommentDao;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 056d6cda614d71b7204d201757aa74ddad44c04f
     @Value("${spring.datasource.url}")
     private String dbHost;
 
@@ -42,14 +39,4 @@ public class CommentController {
     public ResponseEntity<String> getHi(){
         return ResponseEntity.ok(dbHost);
     }
-<<<<<<< HEAD
-
-    // ✅ New method to get comments by user (currently unsupported)
-    @CrossOrigin(origins = "*")
-    @GetMapping(value = "/user/{username}")
-    public ResponseEntity<Iterable<Comment>> getCommentsByUser(@PathVariable String username){
-        throw new UnsupportedOperationException("Fetching comments by user is not implemented yet.");
-    }
-=======
->>>>>>> 056d6cda614d71b7204d201757aa74ddad44c04f
 }
